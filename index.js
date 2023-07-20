@@ -14,7 +14,7 @@ http.createServer(function (req, res) {
 
     req.on('data', function (chunk) {
         //body += chunk;
-        console.log(chunk);
+        console.log(chunk.toString());
 
     });
 
@@ -22,8 +22,12 @@ http.createServer(function (req, res) {
     //    fs.writeFile('file.json', body, 'utf8');
     //    res.end('{"msg": "OK"}');
        console.log("----");
+       res.end();
     })
+
+    
+
 
 }).listen(3001, '0.0.0.0'); 
 
-console.log('Server running at http://127.0.0.1:4560/');
+console.log('Server running at http://0.0.0.0:3001/');
