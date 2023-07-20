@@ -1,0 +1,13 @@
+{
+  "name": "nodesysout",
+  "version": "1.0.0",
+  "description": "Simple Node.js application",
+  "license": "EPL-2.0",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node --inspect=${DEBUG_PORT} index.js"
+  },
+  "dependencies": {
+    
+  }
+}
